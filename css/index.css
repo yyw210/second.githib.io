@@ -1,0 +1,300 @@
+	.block-menu {
+	display: block;
+	background-color: rgba(0, 153, 204, 0.8);
+}
+
+.block-menu li {
+	display: inline-block;
+}
+
+.block-menu li a {
+	color: rgba(0, 153, 204, 0.8);
+	display: block;
+	text-decoration: none;
+	font-family: 'Passion One', Arial, sans-serif;
+	font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+	line-height: 20px;
+	font-size: 24px;
+	padding: 15px 10px;
+}
+
+
+/* animation domination */
+
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+
+
+/* complete the animation! */
+
+.three-d:hover .three-d-box,
+.three-d:focus .three-d-box {
+	transform: translateZ(-25px) rotateX(90deg);
+}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 50%;
+}
+
+
+/* 
+	put the "front" and "back" elements into place with CSS transforms, 
+	specifically translation and translatez
+*/
+
+.front {
+	transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #ffe7c4;
+}
+
+.front,
+.back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 153, 204, 0.8);
+	padding: 15px 10px;
+	color: white;
+	pointer-events: none;
+	box-sizing: border-box;
+}
+
+#aa {
+	top: 100px;
+	width: 100%;
+	height: 50px;
+	margin: 10px auto;
+	opacity: 0.9;
+}
+
+body {
+	background-color: lightblue;
+}
+
+.banner {
+	height: 200px;
+	text-align: center;
+	/*banner高度，文字居中显示*/
+	background-color: rgba(0, 153, 204, 0.8);
+	font-family: arial;
+	font-size: 50px;
+	opacity: 0.9;
+	/*banner变得半透明*/
+	border-radius: 20px;
+	/*让banner的四角变圆*/
+	box-shadow: 5px 5px 5px #656;
+	/*banner阴影*/
+	line-height: 200px;
+	color: rgba(0, 153, 204, 0.8);
+	/*文字颜色*/
+	text-shadow: -1px -1px 0 #FFFFFF, 1px 1px 0 #333, 1px 1px 0 #444;
+	/*让文字有立体效果*/
+	display: block;
+	animation: banner 3s 1;
+}
+
+
+/*主页的banner属性*/
+
+#banner1 {
+	position: absolute;
+	/*绝对定位*/
+	width: 100%;
+	/*占全部宽*/
+	height: 200px;
+	/*高度*/
+	left: -40px;
+	background: url(../img/banner.gif);
+}
+
+#banner3 {
+	position: absolute;
+	/*绝对定位*/
+	width: 100%;
+	height: 1200px;
+	left: 0px;
+	background: url(../img/t../img.gif) fixed;
+}
+
+
+/*不随网页滚动而滚动*/
+
+.list {
+	background-color: rgba(0, 153, 204, 0.8);
+	width: 20%;
+	height: 50px;
+	float: left;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #656;
+	text-align: center;
+	line-height: 50px;
+	font-size: 30px;
+	font-family: "楷体";
+	color: rgba(0, 153, 204, 0.8);
+	text-shadow: -1px -1px 0 #FFFFFF, 1px 1px 0 #333, 1px 1px 0 #444;
+	/*设置阴影*/
+}
+
+
+/*下面链接按钮的属性*/
+
+#content {
+	width: 1300px;
+	/*宽度占百分之70*/
+	margin: 0 auto;
+	/*居中*/
+}
+
+#text-shodow {
+	text-shadow: ;
+}
+
+#moster {
+	height: 1000px;
+	/*整个主页面的高度*/
+	opacity: 0.8;
+	/*设置半透明*/
+	border-radius: 20px;
+	/*圆角*/
+	box-shadow: 5px 5px 5px #656;
+	/*设置阴影*/
+	background-color: rgba(0, 153, 204, 0.8);
+	/*背景颜色*/
+	background-image: url(../img/hostbeijin.png);
+	/*添加图片*/
+	background-repeat: no-repeat;
+	/*图片不重复*/
+	background-position: 100% 100%;
+	/*图片的相对位置*/
+}
+
+
+/*整个主页面*/
+
+
+/*主页面右下角的图片*/
+
+#moster2 {
+	height: 300px;
+	/*高度*/
+	background-image: url(../img/touxiang.png);
+	/*放置头像*/
+	background-repeat: no-repeat;
+	/*不重复*/
+	background-position: 6% 80%;
+	/*放置头像*/
+}
+
+.moster3 {
+	margin-left: 500px;
+	background-color: #FFFFFF;
+	/*背景颜色*/
+	height: 250px;
+	/*高度*/
+	width: 700px;
+	/*宽度*/
+	font-family: "楷体";
+	/*字体*/
+	background-color: rgba(0, 153, 204, 0.1);
+	/*背景颜色*/
+}
+
+
+/*主页的第一段自我介绍的属性*/
+
+#text {
+	font-size: 50px;
+	/*字体大小*/
+	color: #f0f8ff;
+	/*字体颜色*/
+	text-shadow: 2px 2px 0 rgba(255, 105, 111, 0.5);
+	/*字体阴影*/
+	text-align: center;
+	/*字体居中*/
+	font-weight: bolder;
+	/*字体加粗*/
+	font-family: "微软雅黑";
+	/*设置字体*/
+}
+
+#text2 {
+	font-size: 25px;
+	/*字体大小*/
+	color: #fb6c1;
+	/*字体颜色*/
+	font-family: "微软雅黑";
+	/*设置字体*/
+}
+
+#futuretext {
+	margin-left: 280px;
+	margin-top: 200px;
+	height: 400px;
+	/*高度*/
+	width: 600px;
+	/*宽度*/
+	background-color: rgba(0, 153, 204, 0.1);
+	/*背景颜色*/
+}
+
+#footer {
+	clear: all;
+	font-size: 25px;
+	/*字体大小*/
+	font-family: "仿宋";
+	/*字体样式*/
+	text-align: center;
+	/*设置居中*/
+	margin: 0px;
+	text-decoration: overline;
+	text-decoration: underline;
+	font-weight: 900;
+	/*字体加粗*/
+}
+
+
+/*页脚*/
+
+a:hover {
+	color: #7ec0ee;
+	text-shadow: -1px -1px 0 #FFFFFF, 1px 1px 0 #333, 1px 1px 0 #444;
+}
+
+@keyframes banner {
+	0% {
+		transform: left:0px;
+		top: 100px;
+		opacity: 0;
+	}
+	30% {
+		transform: left:0px;
+		top: 100px;
+		opacity: 0;
+	}
+	100% {
+		transform: left:0px;
+		top: 20px;
+		opacity: 1;
+	}

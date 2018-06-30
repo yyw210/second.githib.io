@@ -1,0 +1,246 @@
+			.block-menu {
+	display: block;
+	background-color:rgba(0,153,204,0.8);
+	 
+}
+
+.block-menu li {
+	display: inline-block;
+}
+
+.block-menu li a {
+	color:rgba(0,153,204,0.8);
+	display: block;
+	text-decoration: none;
+	font-family: 'Passion One', Arial, sans-serif;
+	font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+	line-height: 20px;
+	font-size: 24px;
+	padding: 15px 10px;
+}
+
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+	/* complete the animation! */
+	.three-d:hover .three-d-box, 
+	.three-d:focus .three-d-box {
+		transform: translateZ(-25px) rotateX(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 50%;
+}
+
+/* 
+	put the "front" and "back" elements into place with CSS transforms, 
+	specifically translation and translatez
+*/
+.front {
+	transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #ffe7c4;
+}
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color:rgba(0,153,204,0.8);
+	padding: 15px 10px;
+	color: white;
+	pointer-events: none;
+	box-sizing: border-box;
+}
+#aa{
+	top: 100px;
+	width: 100%;
+	height: 50px;/*高度*/
+	margin: 10px auto;
+	 opacity: 0.9;
+}
+body{background:url(../img/p4.jpg)fixed;
+background-position: 50% 50%;
+background-repeat: no-repeat;/*不重复*/
+}
+#banner{
+	width: 100%;/*宽度*/
+	height: 400px;/*高度*/
+	background:-webkit-linear-gradient( top left,lightpink,lightblue);
+	background:-o-linear-gradient( top left,lightpink,lightblue);
+	border-radius: 20px;
+    box-shadow: 5px 5px 5px lightpink;
+}
+#banner1{margin-top: 20px;
+	width: 100%;/*宽度*/
+	height: 400px;/*高度*/
+	background:-webkit-linear-gradient(top right,lightpink, peachpuff);
+	background:-o-linear-gradient(top right,lightpink, peachpuff);
+	border-radius: 20px;
+    box-shadow: 5px 5px 5px lightpink;
+    float: left;
+}
+#banner2{margin-top: 20px;
+	width: 100%;/*宽度*/
+	height: 400px;/*高度*/
+background:-webkit-linear-gradient(top right,mediumaquamarine, peachpuff);
+	border-radius: 20px;/*圆角*/
+    box-shadow: 5px 5px 5px peachpuff;/*div阴影*/
+}
+#banner3{margin-top: 20px;
+	width: 100%;/*宽度*/
+	height: 400px;/*高度*/
+	background-color: slateblue;
+	opacity: 0;
+}
+#banner4{margin-top: 20px;
+	width: 100%;/*宽度*/
+	height: 400px;/*高度*/
+	background:-webkit-linear-gradient( top left,lightpink,lightblue);
+	background:-o-linear-gradient( top left,lightpink,lightblue);
+	border-radius: 20px;
+    box-shadow: 5px 5px 5px lightpink;
+}
+ #banner5{position: absolute;/*绝对定位*/
+		      	       width: 100%;/*宽度*/
+		      	       top: 900px;
+		      	       height: 400px;/*高度*/
+		      	       left: 0px;
+		      	       background: url(../img/t../img.gif) fixed;}
+#aaa{position: absolute;/*绝对定位*/
+		      	       width: 100%;/*宽度*/
+		      	       top: 1800px;
+		      	       height: 400px;/*高度*/
+		      	       left: 0px;
+		      	       background: url(../img/t../img.gif) fixed;}
+#banner6{width: 100%;/*宽度*/
+margin-top: 20px;
+	height: 400px;/*高度*/
+	background:-webkit-linear-gradient( top left,lightpink,lightblue);
+	background:-o-linear-gradient( top left,lightpink,lightblue);
+	border-radius: 20px;/*圆角*/
+    box-shadow: 5px 5px 5px lightpink;}
+#laifeng{
+	height: 80%;/*高度*/
+	width: 32%;/*宽度*/
+	background: url(../img/laifen.jpg);
+	float: left;/*左浮动*/
+    box-shadow: 15px 15px white,-15px -15px white,15px -15px white, -15px 15px white;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+#laifengjianjie{height: 80%;
+	width: 700px;/*宽度*/
+    float: left;/*左浮动*/
+    position: relative;
+}
+#fenge{width: 200px;/*宽度*/
+    float: left;/*左浮动*/
+    height: 80%;/*高度*/
+    background-repeat: no-repeat;
+}
+#feng{width: 200px;/*宽度*/
+    float: left;/*左浮动*/
+    height: 80%;/*高度*/
+}
+#text{font-size: 50px;/*字体大小*/
+			color:#f0f8ff;/*字体颜色*/
+			text-shadow: 2px 2px 0 rgba(255,105,111,0.5); /*字体阴影*/
+			text-align:center;/*字体居中*/
+			font-weight: bolder;/*字体加粗*/
+}
+#text1{color: #7ec0ee; 
+text-shadow: -1px -1px 0 #FFFFFF,1px 1px 0 #333,1px 1px 0 #444;
+font-size: 30px;
+}
+#laifeng21{height: 80%;/*高度*/
+	width: 700px;/*宽度*/
+    float: left;/*左浮动*/
+    position: relative;
+	
+}
+#laifeng2{height: 80%;/*高度*/
+	width: 500px;/*宽度*/
+    float: left;/*左浮动*/
+    position: relative;
+    background: url(../img/tim.jpg);
+    box-shadow: 15px 15px white,-15px -15px white,15px -15px white, -15px 15px white;/*设置阴影*/
+    margin-top: 40px;
+}
+#laifeng3{
+	height: 84%;/*高度*/
+	width: 35%;/*宽度*/
+	background: url(../img/swimm.jpg);
+	float: left;/*左浮动*/
+	box-shadow: 15px 15px white,-15px -15px white,15px -15px white, -15px 15px white;/*设置阴影*/
+    margin-top: 40px;
+    margin-left: 30px;
+}
+#chongshi{width: 600px;/*宽度*/
+    float: left;/*左浮动*/
+    height: 80%;/*高度*/
+    background: url(../img/bg_1.jpg);
+    background-repeat: no-repeat;
+    box-shadow: 15px 15px white,-15px -15px white,15px -15px white, -15px 15px white;/*设置阴影*/
+    margin-top: 40px;
+    margin-left: 50px;
+}
+#chongshi1{width: 460px;/*宽度*/
+    float: left;/*左浮动*/
+    height: 90%;/*高度*/
+    background: url(../img/bg_2.jpg);
+    background-repeat: no-repeat;
+    box-shadow: 15px 15px white,-15px -15px white,15px -15px white, -15px 15px white;/*设置阴影*/
+    margin-top: 20px;
+}
+#chongshi2{height: 90%;/*高度*/
+	width: 600px;/*宽度*/
+	background: url(../img/bg_4.jpg);
+	float: left;/*左浮动*/
+	box-shadow: 15px 15px white,-15px -15px white,15px -15px white, -15px 15px white;/*设置阴影*/
+    margin-top: 20px;
+    margin-left: 30px;
+    }
+    #chongshi:hover{position:relative;z-index:9;transition:2s;transform: rotate(-10deg);}
+    #chongshi1:hover{position:relative;z-index:9;transition:2s;transform: rotate(-10deg);}
+    #chongshi2:hover{position:relative;z-index:9;transition:2s;transform: rotate(-10deg);}
+    #laifeng:hover{position:relative;z-index:9;transition:2s;transform: rotate(-10deg);}
+    #laifeng2:hover{position:relative;z-index:9;transition:2s;transform: rotate(-10deg);}
+    #laifeng3:hover{position:relative;z-index:12;transition:2s;transform: rotate(-10deg);}
+#footer{
+			clear: all;
+			font-size: 25px;/*字体大小*/
+			font-family: "仿宋";/*字体样式*/
+			text-align: center;/*设置居中*/
+			margin: 0px;
+			text-decoration: overline;
+			text-decoration: underline;
+			font-weight: 900;/*字体加粗*/
+		}       /*页脚*/
+#zongde{
+	height: 1000px;/*高度*/
+	width: 1500px;/*宽度*/
+    margin: 0 auto;/*居中*/
+}
+ a{color:lavender;  }
